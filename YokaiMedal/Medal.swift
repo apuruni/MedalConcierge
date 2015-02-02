@@ -1,6 +1,6 @@
 import Foundation
 
-class Medal {
+class Medal : Printable {
     let name:String
     let family:MedalFamily
     let type:MedalType
@@ -9,5 +9,9 @@ class Medal {
         self.name = name
         self.family = family
         self.type = type
+    }
+    
+    var description: String {
+        return "name: \(name), family: \(family.description), type: \(type.description)"
     }
 }
