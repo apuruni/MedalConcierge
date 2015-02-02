@@ -14,7 +14,6 @@
 		6356CB081A7F7A4800A0AE6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6356CB061A7F7A4800A0AE6E /* Main.storyboard */; };
 		6356CB0A1A7F7A4800A0AE6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6356CB091A7F7A4800A0AE6E /* Images.xcassets */; };
 		6356CB0D1A7F7A4800A0AE6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6356CB0B1A7F7A4800A0AE6E /* LaunchScreen.xib */; };
-		6356CB191A7F7A4900A0AE6E /* YokaiMedalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB181A7F7A4900A0AE6E /* YokaiMedalTests.swift */; };
 		6356CB261A7F7CB700A0AE6E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB251A7F7CB700A0AE6E /* Game.swift */; };
 		6356CB281A7F7CC900A0AE6E /* Medal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB271A7F7CC900A0AE6E /* Medal.swift */; };
 		6356CB2A1A7F7CF000A0AE6E /* MedalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB291A7F7CF000A0AE6E /* MedalCollection.swift */; };
@@ -54,7 +53,6 @@
 		6356CB0C1A7F7A4800A0AE6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6356CB121A7F7A4900A0AE6E /* YokaiMedalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YokaiMedalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6356CB171A7F7A4900A0AE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6356CB181A7F7A4900A0AE6E /* YokaiMedalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YokaiMedalTests.swift; sourceTree = "<group>"; };
 		6356CB251A7F7CB700A0AE6E /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		6356CB271A7F7CC900A0AE6E /* Medal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medal.swift; sourceTree = "<group>"; };
 		6356CB291A7F7CF000A0AE6E /* MedalCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalCollection.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 		6356CB151A7F7A4900A0AE6E /* YokaiMedalTests */ = {
 			isa = PBXGroup;
 			children = (
-				6356CB181A7F7A4900A0AE6E /* YokaiMedalTests.swift */,
 				6356CB401A7F9BDD00A0AE6E /* MedalTests.swift */,
 				6356CB3E1A7F8BA700A0AE6E /* MedalCollectionTests.swift */,
 				6356CB161A7F7A4900A0AE6E /* Supporting Files */,
@@ -301,7 +298,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6356CB191A7F7A4900A0AE6E /* YokaiMedalTests.swift in Sources */,
 				6356CB3B1A7F893B00A0AE6E /* MedalType.swift in Sources */,
 				6356CB381A7F893000A0AE6E /* Game.swift in Sources */,
 				6356CB3C1A7F893F00A0AE6E /* MedalFamily.swift in Sources */,

@@ -9,7 +9,7 @@ class MedalCollectionTests: XCTestCase {
         XCTAssertEqual(collection.medals.count, 20)
         
         for medal:Medal in collection.medals {
-            println("\(medal.description)")
+            println(medal.description)
         }
     }
 }
