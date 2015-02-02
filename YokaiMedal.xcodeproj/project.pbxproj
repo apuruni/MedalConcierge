@@ -15,6 +15,20 @@
 		6356CB0A1A7F7A4800A0AE6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6356CB091A7F7A4800A0AE6E /* Images.xcassets */; };
 		6356CB0D1A7F7A4800A0AE6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6356CB0B1A7F7A4800A0AE6E /* LaunchScreen.xib */; };
 		6356CB191A7F7A4900A0AE6E /* YokaiMedalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB181A7F7A4900A0AE6E /* YokaiMedalTests.swift */; };
+		6356CB261A7F7CB700A0AE6E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB251A7F7CB700A0AE6E /* Game.swift */; };
+		6356CB281A7F7CC900A0AE6E /* Medal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB271A7F7CC900A0AE6E /* Medal.swift */; };
+		6356CB2A1A7F7CF000A0AE6E /* MedalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB291A7F7CF000A0AE6E /* MedalCollection.swift */; };
+		6356CB2C1A7F7D8000A0AE6E /* MedalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB2B1A7F7D8000A0AE6E /* MedalType.swift */; };
+		6356CB2E1A7F7E4400A0AE6E /* MedalFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB2D1A7F7E4400A0AE6E /* MedalFamily.swift */; };
+		6356CB311A7F827A00A0AE6E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB301A7F827A00A0AE6E /* Extensions.swift */; };
+		6356CB351A7F838000A0AE6E /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 6356CB341A7F838000A0AE6E /* Data */; };
+		6356CB381A7F893000A0AE6E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB251A7F7CB700A0AE6E /* Game.swift */; };
+		6356CB391A7F893400A0AE6E /* Medal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB271A7F7CC900A0AE6E /* Medal.swift */; };
+		6356CB3A1A7F893700A0AE6E /* MedalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB291A7F7CF000A0AE6E /* MedalCollection.swift */; };
+		6356CB3B1A7F893B00A0AE6E /* MedalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB2B1A7F7D8000A0AE6E /* MedalType.swift */; };
+		6356CB3C1A7F893F00A0AE6E /* MedalFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB2D1A7F7E4400A0AE6E /* MedalFamily.swift */; };
+		6356CB3D1A7F897800A0AE6E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB301A7F827A00A0AE6E /* Extensions.swift */; };
+		6356CB3F1A7F8BA700A0AE6E /* MedalCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB3E1A7F8BA700A0AE6E /* MedalCollectionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +54,14 @@
 		6356CB121A7F7A4900A0AE6E /* YokaiMedalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YokaiMedalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6356CB171A7F7A4900A0AE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6356CB181A7F7A4900A0AE6E /* YokaiMedalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YokaiMedalTests.swift; sourceTree = "<group>"; };
+		6356CB251A7F7CB700A0AE6E /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		6356CB271A7F7CC900A0AE6E /* Medal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medal.swift; sourceTree = "<group>"; };
+		6356CB291A7F7CF000A0AE6E /* MedalCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalCollection.swift; sourceTree = "<group>"; };
+		6356CB2B1A7F7D8000A0AE6E /* MedalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalType.swift; sourceTree = "<group>"; };
+		6356CB2D1A7F7E4400A0AE6E /* MedalFamily.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalFamily.swift; sourceTree = "<group>"; };
+		6356CB301A7F827A00A0AE6E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6356CB341A7F838000A0AE6E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
+		6356CB3E1A7F8BA700A0AE6E /* MedalCollectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalCollectionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +103,11 @@
 		6356CAFB1A7F7A4800A0AE6E /* YokaiMedal */ = {
 			isa = PBXGroup;
 			children = (
-				6356CAFE1A7F7A4800A0AE6E /* AppDelegate.swift */,
-				6356CB001A7F7A4800A0AE6E /* GameScene.sks */,
-				6356CB021A7F7A4800A0AE6E /* GameScene.swift */,
-				6356CB041A7F7A4800A0AE6E /* GameViewController.swift */,
-				6356CB061A7F7A4800A0AE6E /* Main.storyboard */,
-				6356CB091A7F7A4800A0AE6E /* Images.xcassets */,
-				6356CB0B1A7F7A4800A0AE6E /* LaunchScreen.xib */,
+				6356CB241A7F7C4200A0AE6E /* Controller */,
+				6356CB231A7F7C2700A0AE6E /* View */,
+				6356CB221A7F7C1D00A0AE6E /* Model */,
+				6356CB2F1A7F825800A0AE6E /* Utils */,
+				6356CB341A7F838000A0AE6E /* Data */,
 				6356CAFC1A7F7A4800A0AE6E /* Supporting Files */,
 			);
 			path = YokaiMedal;
@@ -96,6 +116,8 @@
 		6356CAFC1A7F7A4800A0AE6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6356CB091A7F7A4800A0AE6E /* Images.xcassets */,
+				6356CAFE1A7F7A4800A0AE6E /* AppDelegate.swift */,
 				6356CAFD1A7F7A4800A0AE6E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -106,6 +128,7 @@
 			children = (
 				6356CB181A7F7A4900A0AE6E /* YokaiMedalTests.swift */,
 				6356CB161A7F7A4900A0AE6E /* Supporting Files */,
+				6356CB3E1A7F8BA700A0AE6E /* MedalCollectionTests.swift */,
 			);
 			path = YokaiMedalTests;
 			sourceTree = "<group>";
@@ -116,6 +139,45 @@
 				6356CB171A7F7A4900A0AE6E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6356CB221A7F7C1D00A0AE6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6356CB251A7F7CB700A0AE6E /* Game.swift */,
+				6356CB271A7F7CC900A0AE6E /* Medal.swift */,
+				6356CB291A7F7CF000A0AE6E /* MedalCollection.swift */,
+				6356CB2B1A7F7D8000A0AE6E /* MedalType.swift */,
+				6356CB2D1A7F7E4400A0AE6E /* MedalFamily.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6356CB231A7F7C2700A0AE6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6356CB0B1A7F7A4800A0AE6E /* LaunchScreen.xib */,
+				6356CB061A7F7A4800A0AE6E /* Main.storyboard */,
+				6356CB001A7F7A4800A0AE6E /* GameScene.sks */,
+				6356CB021A7F7A4800A0AE6E /* GameScene.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6356CB241A7F7C4200A0AE6E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6356CB041A7F7A4800A0AE6E /* GameViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6356CB2F1A7F825800A0AE6E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6356CB301A7F827A00A0AE6E /* Extensions.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +262,7 @@
 			files = (
 				6356CB0D1A7F7A4800A0AE6E /* LaunchScreen.xib in Resources */,
 				6356CB0A1A7F7A4800A0AE6E /* Images.xcassets in Resources */,
+				6356CB351A7F838000A0AE6E /* Data in Resources */,
 				6356CB011A7F7A4800A0AE6E /* GameScene.sks in Resources */,
 				6356CB081A7F7A4800A0AE6E /* Main.storyboard in Resources */,
 			);
@@ -219,9 +282,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6356CB281A7F7CC900A0AE6E /* Medal.swift in Sources */,
+				6356CB311A7F827A00A0AE6E /* Extensions.swift in Sources */,
+				6356CB2E1A7F7E4400A0AE6E /* MedalFamily.swift in Sources */,
+				6356CB2C1A7F7D8000A0AE6E /* MedalType.swift in Sources */,
 				6356CB031A7F7A4800A0AE6E /* GameScene.swift in Sources */,
 				6356CB051A7F7A4800A0AE6E /* GameViewController.swift in Sources */,
 				6356CAFF1A7F7A4800A0AE6E /* AppDelegate.swift in Sources */,
+				6356CB261A7F7CB700A0AE6E /* Game.swift in Sources */,
+				6356CB2A1A7F7CF000A0AE6E /* MedalCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6356CB191A7F7A4900A0AE6E /* YokaiMedalTests.swift in Sources */,
+				6356CB3B1A7F893B00A0AE6E /* MedalType.swift in Sources */,
+				6356CB381A7F893000A0AE6E /* Game.swift in Sources */,
+				6356CB3C1A7F893F00A0AE6E /* MedalFamily.swift in Sources */,
+				6356CB391A7F893400A0AE6E /* Medal.swift in Sources */,
+				6356CB3A1A7F893700A0AE6E /* MedalCollection.swift in Sources */,
+				6356CB3D1A7F897800A0AE6E /* Extensions.swift in Sources */,
+				6356CB3F1A7F8BA700A0AE6E /* MedalCollectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +491,7 @@
 				6356CB1E1A7F7A4900A0AE6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6356CB1F1A7F7A4900A0AE6E /* Build configuration list for PBXNativeTarget "YokaiMedalTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +500,7 @@
 				6356CB211A7F7A4900A0AE6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
