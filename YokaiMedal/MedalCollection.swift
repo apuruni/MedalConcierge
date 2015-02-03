@@ -15,13 +15,18 @@ class MedalCollection {
             println("title = \(title)")
             if let items: AnyObject = data["items"] {
                 for(row, hash) in enumerate(items as [Dictionary<String, String>]){
-                    let medal = Medal(name: hash["name"]!,
-                        family: MedalFamily(rawValue: hash["family"]!)!,
-                        type: MedalType(rawValue: hash["type"]!)!)
+                    let name = hash["name"]
+                    let family =  MedalFamily(rawValue: hash["family"]!)!
+                    let type = MedalType(rawValue: hash["type"]!)!
+                    let probability:Double = (hash["probability"]! as NSString).doubleValue
+                    let medal = Medal(name: name!,
+                                      family: family,
+                                      type: type,
+                                      probability: probability
+                                    )
                     medals.append(medal)
                 }
             }
         }
     }
 }
-

@@ -1,6 +1,6 @@
 import Foundation
 
-enum MedalFamily: String, Printable{
+enum MedalFamily: String {
     case Isamashi = "Isamashi" // イサマシ族
     case Goketsu = "Goketsu" // ゴーケツ族
     case Fushigi = "Fushigi" // フシギ族
@@ -10,8 +10,4 @@ enum MedalFamily: String, Printable{
     case Usurakage = "Usurakage" // ウスラカゲ族
     case Nyororon = "Nyororon" // ニョロロン族
     case Kaima = "Kaima" // カイマ
-    
-    var description: String {
-        return "\(rawValue)"
-    }
 }

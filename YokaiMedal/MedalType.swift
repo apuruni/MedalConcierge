@@ -8,7 +8,8 @@ enum MedalType: String, Printable {
     case Legend = "Legend" // レジェンドメダル
     
     var description: String {
-        return rawValue
+        get {
+            return rawValue
+        }
     }
-    
 }
