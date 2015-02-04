@@ -43,12 +43,12 @@
 			containerPortal = 6356CAF11A7F7A4800A0AE6E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6356CAF81A7F7A4800A0AE6E;
-			remoteInfo = YokaiMedal;
+			remoteInfo = MedalConcierge;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6356CAF91A7F7A4800A0AE6E /* YokaiMedal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YokaiMedal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6356CAF91A7F7A4800A0AE6E /* MedalConcierge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedalConcierge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6356CAFD1A7F7A4800A0AE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6356CAFE1A7F7A4800A0AE6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6356CB001A7F7A4800A0AE6E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		6356CB041A7F7A4800A0AE6E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		6356CB071A7F7A4800A0AE6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6356CB0C1A7F7A4800A0AE6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6356CB121A7F7A4900A0AE6E /* YokaiMedalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YokaiMedalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6356CB121A7F7A4900A0AE6E /* MedalConciergeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedalConciergeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6356CB171A7F7A4900A0AE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6356CB251A7F7CB700A0AE6E /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		6356CB271A7F7CC900A0AE6E /* Medal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medal.swift; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		6356CB3E1A7F8BA700A0AE6E /* MedalCollectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalCollectionTests.swift; sourceTree = "<group>"; };
 		6356CB401A7F9BDD00A0AE6E /* MedalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalTests.swift; sourceTree = "<group>"; };
 		6360B41E1A822498005D25FE /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = "<group>"; };
-		637CCE7E1A822DA100F2E221 /* YokaiMedal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YokaiMedal-Bridging-Header.h"; sourceTree = "<group>"; };
+		637CCE7E1A822DA100F2E221 /* MedalConcierge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedalConcierge-Bridging-Header.h"; sourceTree = "<group>"; };
 		63D73FA41A80E34600957023 /* LotteryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryTests.swift; sourceTree = "<group>"; };
 		63DFD1391A80D1E100C09424 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		63DFD13B1A80D3E000C09424 /* Lottery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lottery.swift; sourceTree = "<group>"; };
@@ -100,8 +100,8 @@
 		6356CAF01A7F7A4800A0AE6E = {
 			isa = PBXGroup;
 			children = (
-				6356CAFB1A7F7A4800A0AE6E /* YokaiMedal */,
-				6356CB151A7F7A4900A0AE6E /* YokaiMedalTests */,
+				6356CAFB1A7F7A4800A0AE6E /* MedalConcierge */,
+				6356CB151A7F7A4900A0AE6E /* MedalConciergeTests */,
 				6356CAFA1A7F7A4800A0AE6E /* Products */,
 				8FB189C9124C5D3550AD9FC8 /* Pods */,
 				75BE6D95122D6A7E7BECFDD4 /* Frameworks */,
@@ -111,13 +111,13 @@
 		6356CAFA1A7F7A4800A0AE6E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6356CAF91A7F7A4800A0AE6E /* YokaiMedal.app */,
-				6356CB121A7F7A4900A0AE6E /* YokaiMedalTests.xctest */,
+				6356CAF91A7F7A4800A0AE6E /* MedalConcierge.app */,
+				6356CB121A7F7A4900A0AE6E /* MedalConciergeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6356CAFB1A7F7A4800A0AE6E /* YokaiMedal */ = {
+		6356CAFB1A7F7A4800A0AE6E /* MedalConcierge */ = {
 			isa = PBXGroup;
 			children = (
 				6356CB241A7F7C4200A0AE6E /* Controller */,
@@ -129,7 +129,8 @@
 				6360B41E1A822498005D25FE /* assets.atlas */,
 				6356CAFC1A7F7A4800A0AE6E /* Supporting Files */,
 			);
-			path = YokaiMedal;
+			name = MedalConcierge;
+			path = MedalConcierge;
 			sourceTree = "<group>";
 		};
 		6356CAFC1A7F7A4800A0AE6E /* Supporting Files */ = {
@@ -137,12 +138,12 @@
 			children = (
 				6356CAFE1A7F7A4800A0AE6E /* AppDelegate.swift */,
 				6356CAFD1A7F7A4800A0AE6E /* Info.plist */,
-				637CCE7E1A822DA100F2E221 /* YokaiMedal-Bridging-Header.h */,
+				637CCE7E1A822DA100F2E221 /* MedalConcierge-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6356CB151A7F7A4900A0AE6E /* YokaiMedalTests */ = {
+		6356CB151A7F7A4900A0AE6E /* MedalConciergeTests */ = {
 			isa = PBXGroup;
 			children = (
 				63D73FA41A80E34600957023 /* LotteryTests.swift */,
@@ -150,7 +151,8 @@
 				6356CB3E1A7F8BA700A0AE6E /* MedalCollectionTests.swift */,
 				6356CB161A7F7A4900A0AE6E /* Supporting Files */,
 			);
-			path = YokaiMedalTests;
+			name = MedalConciergeTests;
+			path = MedalConciergeTests;
 			sourceTree = "<group>";
 		};
 		6356CB161A7F7A4900A0AE6E /* Supporting Files */ = {
@@ -221,9 +223,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6356CAF81A7F7A4800A0AE6E /* YokaiMedal */ = {
+		6356CAF81A7F7A4800A0AE6E /* MedalConcierge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6356CB1C1A7F7A4900A0AE6E /* Build configuration list for PBXNativeTarget "YokaiMedal" */;
+			buildConfigurationList = 6356CB1C1A7F7A4900A0AE6E /* Build configuration list for PBXNativeTarget "MedalConcierge" */;
 			buildPhases = (
 				E40073E53D4123747560B848 /* Check Pods Manifest.lock */,
 				6356CAF51A7F7A4800A0AE6E /* Sources */,
@@ -235,14 +237,14 @@
 			);
 			dependencies = (
 			);
-			name = YokaiMedal;
-			productName = YokaiMedal;
-			productReference = 6356CAF91A7F7A4800A0AE6E /* YokaiMedal.app */;
+			name = MedalConcierge;
+			productName = MedalConcierge;
+			productReference = 6356CAF91A7F7A4800A0AE6E /* MedalConcierge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6356CB111A7F7A4900A0AE6E /* YokaiMedalTests */ = {
+		6356CB111A7F7A4900A0AE6E /* MedalConciergeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6356CB1F1A7F7A4900A0AE6E /* Build configuration list for PBXNativeTarget "YokaiMedalTests" */;
+			buildConfigurationList = 6356CB1F1A7F7A4900A0AE6E /* Build configuration list for PBXNativeTarget "MedalConciergeTests" */;
 			buildPhases = (
 				B5113228AAE3A8CEF5486A90 /* Check Pods Manifest.lock */,
 				6356CB0E1A7F7A4900A0AE6E /* Sources */,
@@ -255,9 +257,9 @@
 			dependencies = (
 				6356CB141A7F7A4900A0AE6E /* PBXTargetDependency */,
 			);
-			name = YokaiMedalTests;
-			productName = YokaiMedalTests;
-			productReference = 6356CB121A7F7A4900A0AE6E /* YokaiMedalTests.xctest */;
+			name = MedalConciergeTests;
+			productName = MedalConciergeTests;
+			productReference = 6356CB121A7F7A4900A0AE6E /* MedalConciergeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -278,7 +280,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6356CAF41A7F7A4800A0AE6E /* Build configuration list for PBXProject "YokaiMedal" */;
+			buildConfigurationList = 6356CAF41A7F7A4800A0AE6E /* Build configuration list for PBXProject "MedalConcierge" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -291,8 +293,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6356CAF81A7F7A4800A0AE6E /* YokaiMedal */,
-				6356CB111A7F7A4900A0AE6E /* YokaiMedalTests */,
+				6356CAF81A7F7A4800A0AE6E /* MedalConcierge */,
+				6356CB111A7F7A4900A0AE6E /* MedalConciergeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -423,7 +425,7 @@
 /* Begin PBXTargetDependency section */
 		6356CB141A7F7A4900A0AE6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6356CAF81A7F7A4800A0AE6E /* YokaiMedal */;
+			target = 6356CAF81A7F7A4800A0AE6E /* MedalConcierge */;
 			targetProxy = 6356CB131A7F7A4900A0AE6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -533,10 +535,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = YokaiMedal/Info.plist;
+				INFOPLIST_FILE = MedalConcierge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/YokaiMedal-Bridging-Header.h";
+				PRODUCT_NAME = MedalConcierge;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/MedalConcierge-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -546,10 +548,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = YokaiMedal/Info.plist;
+				INFOPLIST_FILE = MedalConcierge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/YokaiMedal-Bridging-Header.h";
+				PRODUCT_NAME = MedalConcierge;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/MedalConcierge-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -566,10 +568,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = YokaiMedalTests/Info.plist;
+				INFOPLIST_FILE = MedalConciergeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YokaiMedal.app/YokaiMedal";
+				PRODUCT_NAME = MedalConciergeTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedalConcierge.app/MedalConcierge";
 			};
 			name = Debug;
 		};
@@ -582,17 +584,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = YokaiMedalTests/Info.plist;
+				INFOPLIST_FILE = MedalConciergeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YokaiMedal.app/YokaiMedal";
+				PRODUCT_NAME = MedalConciergeTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedalConcierge.app/MedalConcierge";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6356CAF41A7F7A4800A0AE6E /* Build configuration list for PBXProject "YokaiMedal" */ = {
+		6356CAF41A7F7A4800A0AE6E /* Build configuration list for PBXProject "MedalConcierge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6356CB1A1A7F7A4900A0AE6E /* Debug */,
@@ -601,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6356CB1C1A7F7A4900A0AE6E /* Build configuration list for PBXNativeTarget "YokaiMedal" */ = {
+		6356CB1C1A7F7A4900A0AE6E /* Build configuration list for PBXNativeTarget "MedalConcierge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6356CB1D1A7F7A4900A0AE6E /* Debug */,
@@ -610,7 +612,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6356CB1F1A7F7A4900A0AE6E /* Build configuration list for PBXNativeTarget "YokaiMedalTests" */ = {
+		6356CB1F1A7F7A4900A0AE6E /* Build configuration list for PBXNativeTarget "MedalConciergeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6356CB201A7F7A4900A0AE6E /* Debug */,

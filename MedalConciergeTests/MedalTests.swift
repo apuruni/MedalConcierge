@@ -1,4 +1,4 @@
-import YokaiMedal
+import MedalConcierge
 import Foundation
 import XCTest
 

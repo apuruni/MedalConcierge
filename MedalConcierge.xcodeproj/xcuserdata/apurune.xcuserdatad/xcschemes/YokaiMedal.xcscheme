@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6356CAF81A7F7A4800A0AE6E"
-               BuildableName = "YokaiMedal.app"
-               BlueprintName = "YokaiMedal"
-               ReferencedContainer = "container:YokaiMedal.xcodeproj">
+               BuildableName = "MedalConcierge.app"
+               BlueprintName = "MedalConcierge"
+               ReferencedContainer = "container:MedalConcierge.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6356CB111A7F7A4900A0AE6E"
-               BuildableName = "YokaiMedalTests.xctest"
-               BlueprintName = "YokaiMedalTests"
-               ReferencedContainer = "container:YokaiMedal.xcodeproj">
+               BuildableName = "MedalConciergeTests.xctest"
+               BlueprintName = "MedalConciergeTests"
+               ReferencedContainer = "container:MedalConcierge.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6356CB111A7F7A4900A0AE6E"
-               BuildableName = "YokaiMedalTests.xctest"
-               BlueprintName = "YokaiMedalTests"
-               ReferencedContainer = "container:YokaiMedal.xcodeproj">
+               BuildableName = "MedalConciergeTests.xctest"
+               BlueprintName = "MedalConciergeTests"
+               ReferencedContainer = "container:MedalConcierge.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6356CAF81A7F7A4800A0AE6E"
-            BuildableName = "YokaiMedal.app"
-            BlueprintName = "YokaiMedal"
-            ReferencedContainer = "container:YokaiMedal.xcodeproj">
+            BuildableName = "MedalConcierge.app"
+            BlueprintName = "MedalConcierge"
+            ReferencedContainer = "container:MedalConcierge.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6356CAF81A7F7A4800A0AE6E"
-            BuildableName = "YokaiMedal.app"
-            BlueprintName = "YokaiMedal"
-            ReferencedContainer = "container:YokaiMedal.xcodeproj">
+            BuildableName = "MedalConcierge.app"
+            BlueprintName = "MedalConcierge"
+            ReferencedContainer = "container:MedalConcierge.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6356CAF81A7F7A4800A0AE6E"
-            BuildableName = "YokaiMedal.app"
-            BlueprintName = "YokaiMedal"
-            ReferencedContainer = "container:YokaiMedal.xcodeproj">
+            BuildableName = "MedalConcierge.app"
+            BlueprintName = "MedalConcierge"
+            ReferencedContainer = "container:MedalConcierge.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

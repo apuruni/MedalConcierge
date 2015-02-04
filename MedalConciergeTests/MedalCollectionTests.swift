@@ -1,5 +1,5 @@
 import Foundation
-import YokaiMedal
+import MedalConcierge
 import XCTest
 
 class MedalCollectionTests: XCTestCase {

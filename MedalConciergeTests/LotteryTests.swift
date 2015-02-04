@@ -1,4 +1,4 @@
-import YokaiMedal
+import MedalConcierge
 import XCTest
 
 class LotteryTests : XCTestCase {
