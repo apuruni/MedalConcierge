@@ -28,10 +28,13 @@
 		6356CB3D1A7F897800A0AE6E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB301A7F827A00A0AE6E /* Extensions.swift */; };
 		6356CB3F1A7F8BA700A0AE6E /* MedalCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB3E1A7F8BA700A0AE6E /* MedalCollectionTests.swift */; };
 		6356CB411A7F9BDD00A0AE6E /* MedalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB401A7F9BDD00A0AE6E /* MedalTests.swift */; };
+		6360B41F1A822498005D25FE /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6360B41E1A822498005D25FE /* assets.atlas */; };
 		63D73FA51A80E34600957023 /* LotteryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D73FA41A80E34600957023 /* LotteryTests.swift */; };
 		63D73FA61A80E3B400957023 /* Lottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DFD13B1A80D3E000C09424 /* Lottery.swift */; };
 		63DFD13A1A80D1E100C09424 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DFD1391A80D1E100C09424 /* Images.xcassets */; };
 		63DFD13C1A80D3E000C09424 /* Lottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DFD13B1A80D3E000C09424 /* Lottery.swift */; };
+		D8C51E28CD5996630798E4D4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A340B85FAE6E15436AF4C17E /* libPods.a */; };
+		F776C875A560B818413527DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A340B85FAE6E15436AF4C17E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +67,14 @@
 		6356CB341A7F838000A0AE6E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		6356CB3E1A7F8BA700A0AE6E /* MedalCollectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalCollectionTests.swift; sourceTree = "<group>"; };
 		6356CB401A7F9BDD00A0AE6E /* MedalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalTests.swift; sourceTree = "<group>"; };
+		6360B41E1A822498005D25FE /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = "<group>"; };
+		637CCE7E1A822DA100F2E221 /* YokaiMedal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YokaiMedal-Bridging-Header.h"; sourceTree = "<group>"; };
 		63D73FA41A80E34600957023 /* LotteryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryTests.swift; sourceTree = "<group>"; };
 		63DFD1391A80D1E100C09424 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		63DFD13B1A80D3E000C09424 /* Lottery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lottery.swift; sourceTree = "<group>"; };
+		A340B85FAE6E15436AF4C17E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA894D0ABFA71BD53BEEC668 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E04DFC224FED1CCB80020B05 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F776C875A560B818413527DD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C51E28CD5996630798E4D4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +103,8 @@
 				6356CAFB1A7F7A4800A0AE6E /* YokaiMedal */,
 				6356CB151A7F7A4900A0AE6E /* YokaiMedalTests */,
 				6356CAFA1A7F7A4800A0AE6E /* Products */,
+				8FB189C9124C5D3550AD9FC8 /* Pods */,
+				75BE6D95122D6A7E7BECFDD4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +126,7 @@
 				6356CB2F1A7F825800A0AE6E /* Utils */,
 				6356CB341A7F838000A0AE6E /* Data */,
 				63DFD1391A80D1E100C09424 /* Images.xcassets */,
+				6360B41E1A822498005D25FE /* assets.atlas */,
 				6356CAFC1A7F7A4800A0AE6E /* Supporting Files */,
 			);
 			path = YokaiMedal;
@@ -124,6 +137,7 @@
 			children = (
 				6356CAFE1A7F7A4800A0AE6E /* AppDelegate.swift */,
 				6356CAFD1A7F7A4800A0AE6E /* Info.plist */,
+				637CCE7E1A822DA100F2E221 /* YokaiMedal-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -187,6 +201,23 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		75BE6D95122D6A7E7BECFDD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A340B85FAE6E15436AF4C17E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FB189C9124C5D3550AD9FC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA894D0ABFA71BD53BEEC668 /* Pods.debug.xcconfig */,
+				E04DFC224FED1CCB80020B05 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6356CB1C1A7F7A4900A0AE6E /* Build configuration list for PBXNativeTarget "YokaiMedal" */;
 			buildPhases = (
+				E40073E53D4123747560B848 /* Check Pods Manifest.lock */,
 				6356CAF51A7F7A4800A0AE6E /* Sources */,
 				6356CAF61A7F7A4800A0AE6E /* Frameworks */,
 				6356CAF71A7F7A4800A0AE6E /* Resources */,
+				FF56048CA3FCB977FFE05563 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6356CB1F1A7F7A4900A0AE6E /* Build configuration list for PBXNativeTarget "YokaiMedalTests" */;
 			buildPhases = (
+				B5113228AAE3A8CEF5486A90 /* Check Pods Manifest.lock */,
 				6356CB0E1A7F7A4900A0AE6E /* Sources */,
 				6356CB0F1A7F7A4900A0AE6E /* Frameworks */,
 				6356CB101A7F7A4900A0AE6E /* Resources */,
+				BC65C50EBA03B72F00459DC2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +304,7 @@
 			files = (
 				6356CB0D1A7F7A4800A0AE6E /* LaunchScreen.xib in Resources */,
 				63DFD13A1A80D1E100C09424 /* Images.xcassets in Resources */,
+				6360B41F1A822498005D25FE /* assets.atlas in Resources */,
 				6356CB351A7F838000A0AE6E /* Data in Resources */,
 				6356CB011A7F7A4800A0AE6E /* GameScene.sks in Resources */,
 				6356CB081A7F7A4800A0AE6E /* Main.storyboard in Resources */,
@@ -283,6 +319,69 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5113228AAE3A8CEF5486A90 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC65C50EBA03B72F00459DC2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E40073E53D4123747560B848 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF56048CA3FCB977FFE05563 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6356CAF51A7F7A4800A0AE6E /* Sources */ = {
@@ -430,28 +529,33 @@
 		};
 		6356CB1D1A7F7A4900A0AE6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA894D0ABFA71BD53BEEC668 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = YokaiMedal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/YokaiMedal-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		6356CB1E1A7F7A4900A0AE6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04DFC224FED1CCB80020B05 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = YokaiMedal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/YokaiMedal-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		6356CB201A7F7A4900A0AE6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA894D0ABFA71BD53BEEC668 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -471,6 +575,7 @@
 		};
 		6356CB211A7F7A4900A0AE6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04DFC224FED1CCB80020B05 /* Pods.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

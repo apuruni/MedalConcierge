@@ -10,7 +10,8 @@ class LotteryTests : XCTestCase {
         let lot = Lottery(collection: collection)
         
         var stats = [String: Int]()
-        for i in 1...100000 {
+        // for i in 1...10000 {
+        for i in 1...100 {
             var medal = lot.draw()
             // println("\(medal!.description)")
             if let stat = stats[medal!.name] {
