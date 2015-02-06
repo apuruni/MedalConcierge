@@ -1,13 +1,13 @@
 import Foundation
 
 class Game {
-    var medalCollection: MedalCollection
+    var medalSet: MedalSet
     var lottery: Lottery
     init() {
-        medalCollection = MedalCollection()
-        medalCollection.createCollection()
+        medalSet = MedalSet()
+        medalSet.createSet()
         
-        lottery = Lottery(collection: medalCollection)
+        lottery = Lottery(medalSet: medalSet)
     }
     
     func drawMedal() -> Medal {

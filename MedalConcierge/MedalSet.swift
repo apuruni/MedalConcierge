@@ -1,6 +1,6 @@
 import Foundation
 
-class MedalCollection {
+class MedalSet {
     var title:String!
     var medals = [Medal]()
     
@@ -8,7 +8,7 @@ class MedalCollection {
         
     }
     
-    func createCollection() {
+    func createSet() {
         if let data = Dictionary<String, AnyObject>.loadJSONFromBundle("Data/Collection/Shinuchi"){
             println("collection data:\n \(data)")
             title = data["title"] as String

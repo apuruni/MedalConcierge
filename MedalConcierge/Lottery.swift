@@ -2,16 +2,16 @@ import Foundation
 
 class Lottery {
     
-    var collection:MedalCollection
+    var medalSet:MedalSet
     
-    init(collection: MedalCollection){
-        self.collection = collection
+    init(medalSet: MedalSet){
+        self.medalSet = medalSet
     }
     
     func draw() -> Medal? {
         let index = random(100000)
         var total:Double = Double(index) / 1000.0
-        for medal in collection.medals {
+        for medal in medalSet.medals {
             total = total - medal.probability
             if total <= 0 {
                 return medal

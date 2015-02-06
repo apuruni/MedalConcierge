@@ -4,11 +4,11 @@ import XCTest
 
 class MedalCollectionTests: XCTestCase {
     func testCreateCollection() {
-        let collection = MedalCollection()
-        collection.createCollection()
-        XCTAssertEqual(collection.medals.count, 20)
+        let medalSet = MedalSet()
+        medalSet.createSet()
+        XCTAssertEqual(medalSet.medals.count, 20)
         
-        for medal:Medal in collection.medals {
+        for medal:Medal in medalSet.medals {
             println(medal.description)
         }
     }

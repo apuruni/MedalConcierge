@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 enum MedalType: String, Printable {
     case Normal = "Normal" // ノーマルメダル
@@ -10,6 +11,23 @@ enum MedalType: String, Printable {
     var description: String {
         get {
             return rawValue
+        }
+    }
+    
+    var medalColor: UIColor {
+        get {
+            switch self {
+            case .Normal:
+                return UIColor.paperColorGray700()
+            case .Zero:
+                return UIColor.paperColorGreen700()
+            case .Classic:
+                return UIColor.paperColorRed700()
+            case .Skill:
+                return UIColor.paperColorBlue700()
+            case .Legend:
+                return UIColor.paperColorYellow700()
+            }
         }
     }
 }

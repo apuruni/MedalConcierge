@@ -3,11 +3,11 @@ import XCTest
 
 class LotteryTests : XCTestCase {
     func testDraw() {
-        let collection = MedalCollection()
-        collection.createCollection()
-        XCTAssertEqual(collection.medals.count, 20)
+        let medalSet = MedalSet()
+        medalSet.createSet()
+        XCTAssertEqual(medalSet.medals.count, 20)
         
-        let lot = Lottery(collection: collection)
+        let lot = Lottery(medalSet: medalSet)
         
         var stats = [String: Int]()
         // for i in 1...10000 {
@@ -21,7 +21,7 @@ class LotteryTests : XCTestCase {
             }
         }
         
-        for medal in collection.medals {
+        for medal in medalSet.medals {
             println("\(medal.description) -> \(stats[medal.name]!)")
         }
     }

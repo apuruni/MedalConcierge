@@ -4,6 +4,7 @@ class GameScene: SKScene {
     
     let game = Game()
     
+    let medalNode = SKShapeNode(circleOfRadius: 150)
     let medalNameLabel = SKLabelNode(text: "NOTHING")
     
     override func didMoveToView(view: SKView) {
@@ -19,12 +20,12 @@ class GameScene: SKScene {
     }
     
     func addMedalNode() {
-        let medalNode = SKShapeNode(circleOfRadius: 120)
         medalNode.fillColor = UIColor.paperColorGreen700()
         medalNode.position = CGPoint(x: self.frame.midX, y: self.frame.height * 0.67)
         self.addChild(medalNode)
         
-        medalNameLabel.fontSize = 32
+        medalNameLabel.fontSize = 28
+        medalNameLabel.alpha = 0.87
         medalNameLabel.fontColor = UIColor.whiteColor()
         medalNameLabel.position = CGPoint(x: 0, y: 0)
         medalNode.addChild(medalNameLabel)
@@ -43,6 +44,7 @@ class GameScene: SKScene {
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
         let medal = game.drawMedal()
         println("draw a medal: \(medal)")
+        medalNode.fillColor = medal.type.medalColor
         medalNameLabel.text = medal.name
     }
     
