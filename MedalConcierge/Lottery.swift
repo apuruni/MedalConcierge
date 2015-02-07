@@ -8,7 +8,7 @@ class Lottery {
         self.medalSet = medalSet
     }
     
-    func draw() -> Medal? {
+    func drawSingleMedal() -> Medal? {
         let index = random(100000)
         var total:Double = Double(index) / 1000.0
         for medal in medalSet.medals {
@@ -19,6 +19,14 @@ class Lottery {
         }
         
         return nil
+    }
+    
+    func drawPackage() -> [Medal] {
+        var medals = [Medal]()
+        medals.append(drawSingleMedal()!)
+        medals.append(drawSingleMedal()!)
+        
+        return medals
     }
     
     func random(max: Int) -> Int {

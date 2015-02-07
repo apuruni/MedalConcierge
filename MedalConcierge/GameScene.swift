@@ -4,8 +4,8 @@ class GameScene: SKScene {
     
     let game = Game()
     
-    let medalNode = SKShapeNode(circleOfRadius: 150)
-    let medalNameLabel = SKLabelNode(text: "NOTHING")
+    let medalNode1 = MedalNode(circleOfRadius: 80)
+    let medalNode2 = MedalNode(circleOfRadius: 80)
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
@@ -14,21 +14,22 @@ class GameScene: SKScene {
             println("medalFrame:\(medalFrame)")
             medalFrame.color = UIColor.paperColorCyan600()
             //medalFrame.runAction(SKAction.colorizeWithColor(UIColor.redColor(), colorBlendFactor: 1, duration: 0.5))
+
+            addMedalNode1(medalFrame)
+            addMedalNode2(medalFrame)
         }
-    
-        addMedalNode()
     }
     
-    func addMedalNode() {
-        medalNode.fillColor = UIColor.paperColorGreen700()
-        medalNode.position = CGPoint(x: self.frame.midX, y: self.frame.height * 0.67)
-        self.addChild(medalNode)
-        
-        medalNameLabel.fontSize = 28
-        medalNameLabel.alpha = 0.87
-        medalNameLabel.fontColor = UIColor.whiteColor()
-        medalNameLabel.position = CGPoint(x: 0, y: 0)
-        medalNode.addChild(medalNameLabel)
+    func addMedalNode1(parent:SKNode) {
+        medalNode1.fillColor = UIColor.paperColorGreen700()
+        medalNode1.position = CGPoint(x: 0, y: parent.frame.height * 0.25)
+        parent.addChild(medalNode1)
+    }
+    
+    func addMedalNode2(parent:SKNode) {
+        medalNode2.fillColor = UIColor.paperColorGreen700()
+        medalNode2.position = CGPoint(x: 0, y: parent.frame.height * -0.25)
+        parent.addChild(medalNode2)
     }
    
     override func update(currentTime: CFTimeInterval) {
@@ -42,10 +43,13 @@ class GameScene: SKScene {
         
     }
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
-        let medal = game.drawMedal()
-        println("draw a medal: \(medal)")
-        medalNode.fillColor = medal.type.medalColor
-        medalNameLabel.text = medal.name
+        let medals = game.drawPackage()
+        println("draw medals: \(medals)")
+        medalNode1.fillColor = medals[0].type.medalColor
+        medalNode1.nameLabel.text = medals[0].name
+        
+        medalNode2.fillColor = medals[1].type.medalColor
+        medalNode2.nameLabel.text = medals[1].name
     }
     
     override func touchesCancelled(touches: NSSet!, withEvent event: UIEvent!) {

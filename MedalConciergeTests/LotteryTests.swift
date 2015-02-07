@@ -12,7 +12,7 @@ class LotteryTests : XCTestCase {
         var stats = [String: Int]()
         // for i in 1...10000 {
         for i in 1...100 {
-            var medal = lot.draw()
+            var medal = lot.drawSingleMedal()
             // println("\(medal!.description)")
             if let stat = stats[medal!.name] {
                 stats[medal!.name] = stat + 1
