@@ -34,6 +34,7 @@
 		63D73FA51A80E34600957023 /* LotteryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D73FA41A80E34600957023 /* LotteryTests.swift */; };
 		63D73FA61A80E3B400957023 /* Lottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DFD13B1A80D3E000C09424 /* Lottery.swift */; };
 		63DEC15B1A85C6350099EE38 /* MedalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DEC15A1A85C6350099EE38 /* MedalNode.swift */; };
+		63DEC15D1A86E75F0099EE38 /* MedalCollectionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DEC15C1A86E75F0099EE38 /* MedalCollectionNode.swift */; };
 		63DFD13A1A80D1E100C09424 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DFD1391A80D1E100C09424 /* Images.xcassets */; };
 		63DFD13C1A80D3E000C09424 /* Lottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DFD13B1A80D3E000C09424 /* Lottery.swift */; };
 		D8C51E28CD5996630798E4D4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A340B85FAE6E15436AF4C17E /* libPods.a */; };
@@ -75,6 +76,7 @@
 		637CCE7E1A822DA100F2E221 /* MedalConcierge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedalConcierge-Bridging-Header.h"; sourceTree = "<group>"; };
 		63D73FA41A80E34600957023 /* LotteryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryTests.swift; sourceTree = "<group>"; };
 		63DEC15A1A85C6350099EE38 /* MedalNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalNode.swift; sourceTree = "<group>"; };
+		63DEC15C1A86E75F0099EE38 /* MedalCollectionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalCollectionNode.swift; sourceTree = "<group>"; };
 		63DFD1391A80D1E100C09424 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		63DFD13B1A80D3E000C09424 /* Lottery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lottery.swift; sourceTree = "<group>"; };
 		A340B85FAE6E15436AF4C17E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				63DEC15A1A85C6350099EE38 /* MedalNode.swift */,
+				63DEC15C1A86E75F0099EE38 /* MedalCollectionNode.swift */,
 			);
 			name = Node;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				6356CB311A7F827A00A0AE6E /* Extensions.swift in Sources */,
 				6356CB2E1A7F7E4400A0AE6E /* MedalFamily.swift in Sources */,
 				63DFD13C1A80D3E000C09424 /* Lottery.swift in Sources */,
+				63DEC15D1A86E75F0099EE38 /* MedalCollectionNode.swift in Sources */,
 				6356CB2C1A7F7D8000A0AE6E /* MedalType.swift in Sources */,
 				6356CB031A7F7A4800A0AE6E /* GameScene.swift in Sources */,
 				63DEC15B1A85C6350099EE38 /* MedalNode.swift in Sources */,

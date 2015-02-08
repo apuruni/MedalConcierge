@@ -7,16 +7,23 @@ class GameScene: SKScene {
     let medalNode1 = MedalNode(circleOfRadius: 80)
     let medalNode2 = MedalNode(circleOfRadius: 80)
     
+    //var medalCollectionNode:MedalCollectionNode
+    
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         
-        if let medalFrame = self.childNodeWithName("medalFrame") as? SKSpriteNode {
-            println("medalFrame:\(medalFrame)")
-            medalFrame.color = UIColor.paperColorCyan600()
+        if let medalContainer = self.childNodeWithName("medalContainer") as? SKSpriteNode {
+            println("medalContainer:\(medalContainer)")
+            medalContainer.color = UIColor.paperColorCyan600()
             //medalFrame.runAction(SKAction.colorizeWithColor(UIColor.redColor(), colorBlendFactor: 1, duration: 0.5))
 
-            addMedalNode1(medalFrame)
-            addMedalNode2(medalFrame)
+            addMedalNode1(medalContainer)
+            addMedalNode2(medalContainer)
+        }
+        
+        if let collectionContainer = self.childNodeWithName("collectionContainer") as? SKSpriteNode {
+            println("collectionContainer:\(collectionContainer)")
+            addMedalCollectionNode(collectionContainer)
         }
     }
     
@@ -30,6 +37,13 @@ class GameScene: SKScene {
         medalNode2.fillColor = UIColor.paperColorGreen700()
         medalNode2.position = CGPoint(x: 0, y: parent.frame.height * -0.25)
         parent.addChild(medalNode2)
+    }
+    
+    func addMedalCollectionNode(collectionContainer:SKNode) {
+        let medalCollectionNode = MedalCollectionNode(rectOfSize: collectionContainer.frame.size)
+        medalCollectionNode.setup(game.medalCollection)
+        println("medalCollectionNode:\(medalCollectionNode)")
+        collectionContainer.addChild(medalCollectionNode)
     }
    
     override func update(currentTime: CFTimeInterval) {
