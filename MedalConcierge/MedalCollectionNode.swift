@@ -44,7 +44,10 @@ class MedalCollectionNode : SKShapeNode {
     func updateCollection() {
         for medalNode in medalNodes {
             if let medalCount = self.collection.collection[medalNode.medal!.name] {
-                medalNode.collected = medalCount > 0
+                if medalCount > 0 {
+                    medalNode.collected = true
+                    medalNode.countLabel.text = "\(medalCount)"
+                }
             }
         }
     }

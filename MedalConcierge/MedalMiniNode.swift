@@ -3,13 +3,17 @@ import SpriteKit
 let MEDAL_IN_COLLECTION_RADIUS:CGFloat = 10.0
 
 class MedalMiniNode: MedalNode {
+    var countLabel = SKLabelNode()
     var coverNode:SKShapeNode!
+    
     var collected:Bool = false {
         didSet {
             if collected {
                 coverNode.hidden = true
+                countLabel.hidden = false
             } else {
                 coverNode.hidden = false
+                countLabel.hidden = true
             }
         }
     }
@@ -25,11 +29,15 @@ class MedalMiniNode: MedalNode {
     }
     
     private func setup() {
+        nameLabel.hidden = true
+
         coverNode = SKShapeNode(circleOfRadius: MEDAL_IN_COLLECTION_RADIUS)
         coverNode.fillColor = UIColor.paperColorGray500()
         coverNode.alpha = 0.78
         self.addChild(coverNode)
-        
-        nameLabel.hidden = true
+
+        countLabel.fontSize = 12
+        countLabel.verticalAlignmentMode = SKLabelVerticalAlignmentMode.Center
+        self.addChild(countLabel)
     }
 }
