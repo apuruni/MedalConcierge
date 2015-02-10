@@ -7,7 +7,7 @@ class GameScene: SKScene {
     let medalNode1 = MedalNode(circleOfRadius: 80)
     let medalNode2 = MedalNode(circleOfRadius: 80)
     
-    //var medalCollectionNode:MedalCollectionNode
+    var medalCollectionNode:MedalCollectionNode!
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
@@ -28,19 +28,17 @@ class GameScene: SKScene {
     }
     
     func addMedalNode1(parent:SKNode) {
-        medalNode1.fillColor = UIColor.paperColorGreen700()
         medalNode1.position = CGPoint(x: 0, y: parent.frame.height * 0.25)
         parent.addChild(medalNode1)
     }
     
     func addMedalNode2(parent:SKNode) {
-        medalNode2.fillColor = UIColor.paperColorGreen700()
         medalNode2.position = CGPoint(x: 0, y: parent.frame.height * -0.25)
         parent.addChild(medalNode2)
     }
     
     func addMedalCollectionNode(collectionContainer:SKNode) {
-        let medalCollectionNode = MedalCollectionNode(rectOfSize: collectionContainer.frame.size)
+        medalCollectionNode = MedalCollectionNode(rectOfSize: collectionContainer.frame.size)
         medalCollectionNode.setup(game.medalCollection)
         println("medalCollectionNode:\(medalCollectionNode)")
         collectionContainer.addChild(medalCollectionNode)
@@ -64,6 +62,8 @@ class GameScene: SKScene {
         
         medalNode2.fillColor = medals[1].type.medalColor
         medalNode2.nameLabel.text = medals[1].name
+        
+        medalCollectionNode.updateCollection()
     }
     
     override func touchesCancelled(touches: NSSet!, withEvent event: UIEvent!) {

@@ -10,6 +10,7 @@ import Foundation
 import SpriteKit
 
 class MedalNode: SKShapeNode {
+    var medal:Medal?
     let nameLabel = SKLabelNode(text: "EMPTY")
     
     override init() {
@@ -19,10 +20,11 @@ class MedalNode: SKShapeNode {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        setup()
     }
     
-    func setup() {
-        fillColor = UIColor.paperColorGreen700()
+    private func setup() {
+        fillColor = UIColor.paperColorGray300()
         
         nameLabel.fontSize = 16
         nameLabel.alpha = 0.87

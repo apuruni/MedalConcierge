@@ -31,6 +31,7 @@
 		6356CB3F1A7F8BA700A0AE6E /* MedalCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB3E1A7F8BA700A0AE6E /* MedalCollectionTests.swift */; };
 		6356CB411A7F9BDD00A0AE6E /* MedalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB401A7F9BDD00A0AE6E /* MedalTests.swift */; };
 		6360B41F1A822498005D25FE /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6360B41E1A822498005D25FE /* assets.atlas */; };
+		639C126E1A8A1435006F6EB8 /* MedalMiniNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C126D1A8A1434006F6EB8 /* MedalMiniNode.swift */; };
 		63D73FA51A80E34600957023 /* LotteryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D73FA41A80E34600957023 /* LotteryTests.swift */; };
 		63D73FA61A80E3B400957023 /* Lottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DFD13B1A80D3E000C09424 /* Lottery.swift */; };
 		63DEC15B1A85C6350099EE38 /* MedalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DEC15A1A85C6350099EE38 /* MedalNode.swift */; };
@@ -74,6 +75,7 @@
 		6356CB401A7F9BDD00A0AE6E /* MedalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalTests.swift; sourceTree = "<group>"; };
 		6360B41E1A822498005D25FE /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = "<group>"; };
 		637CCE7E1A822DA100F2E221 /* MedalConcierge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedalConcierge-Bridging-Header.h"; sourceTree = "<group>"; };
+		639C126D1A8A1434006F6EB8 /* MedalMiniNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalMiniNode.swift; sourceTree = "<group>"; };
 		63D73FA41A80E34600957023 /* LotteryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryTests.swift; sourceTree = "<group>"; };
 		63DEC15A1A85C6350099EE38 /* MedalNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalNode.swift; sourceTree = "<group>"; };
 		63DEC15C1A86E75F0099EE38 /* MedalCollectionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalCollectionNode.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			children = (
 				63DEC15A1A85C6350099EE38 /* MedalNode.swift */,
 				63DEC15C1A86E75F0099EE38 /* MedalCollectionNode.swift */,
+				639C126D1A8A1434006F6EB8 /* MedalMiniNode.swift */,
 			);
 			name = Node;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				631E45421A84D85100DC656A /* MedalCollection.swift in Sources */,
 				6356CB311A7F827A00A0AE6E /* Extensions.swift in Sources */,
 				6356CB2E1A7F7E4400A0AE6E /* MedalFamily.swift in Sources */,
+				639C126E1A8A1435006F6EB8 /* MedalMiniNode.swift in Sources */,
 				63DFD13C1A80D3E000C09424 /* Lottery.swift in Sources */,
 				63DEC15D1A86E75F0099EE38 /* MedalCollectionNode.swift in Sources */,
 				6356CB2C1A7F7D8000A0AE6E /* MedalType.swift in Sources */,
