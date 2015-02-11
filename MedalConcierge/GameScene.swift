@@ -8,6 +8,7 @@ class GameScene: SKScene {
     let medalNode2 = MedalNode(circleOfRadius: 80)
     
     var medalCollectionNode:MedalCollectionNode!
+    var drawCountLabel:SKLabelNode!
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
@@ -25,6 +26,9 @@ class GameScene: SKScene {
             println("collectionContainer:\(collectionContainer)")
             addMedalCollectionNode(collectionContainer)
         }
+        
+        drawCountLabel = self.childNodeWithName("drawCountLabel") as SKLabelNode
+        
     }
     
     func addMedalNode1(parent:SKNode) {
@@ -56,6 +60,7 @@ class GameScene: SKScene {
     }
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
         let medals = game.drawPackage()
+        drawCountLabel.text = "\(game.drawCount)"
         println("draw medals: \(medals)")
         medalNode1.fillColor = medals[0].type.medalColor
         medalNode1.nameLabel.text = medals[0].name

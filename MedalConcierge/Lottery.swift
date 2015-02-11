@@ -2,10 +2,10 @@ import Foundation
 
 class Lottery {
     
-    var medalSet:MedalSet
+    var medalSet:MedalSet!
+    var medalAssort:MedalAssortment!
     
     init(medalSet: MedalSet){
-        self.medalSet = medalSet
     }
     
     func drawSingleMedal() -> Medal? {
