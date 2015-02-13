@@ -1,6 +1,6 @@
 import SpriteKit
 
-let MEDAL_IN_COLLECTION_RADIUS:CGFloat = 10.0
+let MEDAL_IN_COLLECTION_RADIUS:CGFloat = 12.0
 
 class MedalMiniNode: MedalNode {
     var countLabel = SKLabelNode()
@@ -36,7 +36,8 @@ class MedalMiniNode: MedalNode {
         coverNode.alpha = 0.78
         self.addChild(coverNode)
 
-        countLabel.fontSize = 12
+        countLabel.fontSize = 14
+        countLabel.fontName = "Avenir Next Bold"
         countLabel.verticalAlignmentMode = SKLabelVerticalAlignmentMode.Center
         self.addChild(countLabel)
     }

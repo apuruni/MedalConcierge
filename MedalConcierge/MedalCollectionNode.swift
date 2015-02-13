@@ -1,6 +1,8 @@
 import SpriteKit
 
 let MEDAL_COLLECTION_COLUMS_MAX:Int = 10
+let MEDAL_COLLECTION_ROW_SPAN:CGFloat = 10.0
+let MEDAL_COLLECTION_COL_SPAN:CGFloat = 5.0
 
 class MedalCollectionNode : SKShapeNode {
     var collection:MedalCollection!
@@ -30,8 +32,8 @@ class MedalCollectionNode : SKShapeNode {
             let row = index / MEDAL_COLLECTION_COLUMS_MAX
             let column = index % MEDAL_COLLECTION_COLUMS_MAX
             
-            let x = (CGFloat(column) + 0.5) * MEDAL_IN_COLLECTION_RADIUS *  3 - self.frame.size.width / 2
-            let y = (CGFloat(row) + 0.5) * MEDAL_IN_COLLECTION_RADIUS * 3 - self.frame.size.height / 2
+            let x = (CGFloat(column) + 0.5) * MEDAL_IN_COLLECTION_RADIUS * 2 + MEDAL_COLLECTION_COL_SPAN * CGFloat(column + 1) - self.frame.size.width / 2
+            let y = (CGFloat(row) + 0.5) * MEDAL_IN_COLLECTION_RADIUS * 2 + MEDAL_COLLECTION_ROW_SPAN * CGFloat(row + 1) - self.frame.size.height / 2
             medalNode.position = CGPoint(x: x, y: y)
             
             medalNodes.append(medalNode)

@@ -11,7 +11,7 @@ class GameScene: SKScene {
     var drawCountLabel:SKLabelNode!
     
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
+        self.scaleMode = SKSceneScaleMode.ResizeFill
         
         if let medalContainer = self.childNodeWithName("medalContainer") as? SKSpriteNode {
             println("medalContainer:\(medalContainer)")
