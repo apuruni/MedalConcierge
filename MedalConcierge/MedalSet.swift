@@ -18,7 +18,6 @@ class MedalSet {
                     let name = hash["name"]
                     let family =  MedalFamily(rawValue: hash["family"]!)!
                     let type = MedalType(rawValue: hash["type"]!)!
-                    let probability:Double = (hash["probability"]! as NSString).doubleValue
                     let medal = Medal(name: name!,
                                       family: family,
                                       type: type
