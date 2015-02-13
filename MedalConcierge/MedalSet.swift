@@ -21,12 +21,20 @@ class MedalSet {
                     let probability:Double = (hash["probability"]! as NSString).doubleValue
                     let medal = Medal(name: name!,
                                       family: family,
-                                      type: type,
-                                      probability: probability
-                                    )
+                                      type: type
+                    )
                     medals.append(medal)
                 }
             }
         }
+    }
+    
+    func forName(name: String) -> Medal? {
+        for medal in medals {
+            if medal.name == name {
+                return medal
+            }
+        }
+        return nil
     }
 }

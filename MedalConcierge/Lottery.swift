@@ -2,29 +2,22 @@ import Foundation
 
 class Lottery {
     
-    var medalSet:MedalSet!
-    var medalAssort:MedalAssortment!
+    var medalSet:MedalSet
+    var medalAssortment:MedalAssortment
     
-    init(medalSet: MedalSet){
-    }
-    
-    func drawSingleMedal() -> Medal? {
-        let index = random(100000)
-        var total:Double = Double(index) / 1000.0
-        for medal in medalSet.medals {
-            total = total - medal.probability
-            if total <= 0 {
-                return medal
-            }
-        }
-        
-        return nil
+    init(medalSet: MedalSet, medalAssortment: MedalAssortment){
+        self.medalSet = medalSet
+        self.medalAssortment = medalAssortment
     }
     
     func drawPackage() -> [Medal] {
         var medals = [Medal]()
-        medals.append(drawSingleMedal()!)
-        medals.append(drawSingleMedal()!)
+        
+        let randIndex = random(medalAssortment.packages.count)
+        let medalNames = medalAssortment.packages[randIndex].medalNames
+        for name in medalNames {
+            medals.append(medalSet.forName(name)!)
+        }
         
         return medals
     }

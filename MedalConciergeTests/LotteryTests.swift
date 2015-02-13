@@ -7,17 +7,24 @@ class LotteryTests : XCTestCase {
         medalSet.createSet()
         XCTAssertEqual(medalSet.medals.count, 20)
         
-        let lot = Lottery(medalSet: medalSet)
+        let medalAssortment = MedalAssortment()
+        medalAssortment.loadAssortment()
+        XCTAssertEqual(medalAssortment.packages.count, 72)
+        
+        let lot = Lottery(medalSet: medalSet, medalAssortment: medalAssortment)
         
         var stats = [String: Int]()
         // for i in 1...10000 {
         for i in 1...100 {
-            var medal = lot.drawSingleMedal()
+            var medals:[Medal] = lot.drawPackage()
+            XCTAssertEqual(medals.count, 2)
             // println("\(medal!.description)")
-            if let stat = stats[medal!.name] {
-                stats[medal!.name] = stat + 1
-            } else {
-                stats[medal!.name] = 1
+            for medal in medals {
+                if let stat = stats[medal.name] {
+                    stats[medal.name] = stat + 1
+                } else {
+                    stats[medal.name] = 1
+                }
             }
         }
         
