@@ -9,9 +9,13 @@
 import Foundation
 import SpriteKit
 
+let MEDAL_DRAW_RADIUS:CGFloat = 80.0
+
 class MedalNode: SKShapeNode {
-    var medal:Medal?
+    var medal:Medal? = nil { didSet { medalChanged() } }
     let nameLabel = SKLabelNode(text: "EMPTY")
+    var nameLableBackgroud:SKShapeNode!
+    var designNode:SKShapeNode!
     
     override init() {
         super.init()
@@ -24,13 +28,60 @@ class MedalNode: SKShapeNode {
     }
     
     private func setup() {
-        fillColor = UIColor.paperColorGray300()
+        self.fillColor = defaultFillColor
+        self.lineWidth = 0
         
+        designNode = SKShapeNode(circleOfRadius: radius * 0.9)
+        designNode.position = CGPoint(x: 0, y: 0)
+        designNode.fillColor = UIColor.whiteColor()
+        designNode.lineWidth = 0
+        designNode.zPosition = 10
+        addChild(designNode)
+        
+        nameLableBackgroud = SKShapeNode(rectOfSize: CGSize(width: radius * 1.8, height: 30))
+        nameLableBackgroud.lineWidth = 0
+        nameLableBackgroud.zPosition = 20
+        designNode.addChild(nameLableBackgroud)
+
         nameLabel.fontSize = 16
         nameLabel.alpha = 0.87
         nameLabel.fontColor = UIColor.whiteColor()
         nameLabel.position = CGPoint(x: 0, y: 0)
         nameLabel.verticalAlignmentMode = SKLabelVerticalAlignmentMode.Center
+        nameLabel.zPosition = 30
         addChild(nameLabel)
+        
+        medalChanged()
+    }
+    
+    private func medalChanged() {
+        if let medal = self.medal {
+            fillColor = medal.type.medalFrameColor
+            nameLableBackgroud.fillColor = medal.type.medalFrameColor
+            nameLabel.text = medal.name
+            
+            if let imageName = medalDesignImageName {
+                designNode.fillTexture = SKTexture(imageNamed: imageName)
+                designNode.fillColor = UIColor.whiteColor()
+            } else {
+                designNode.fillTexture = nil
+                designNode.fillColor = medal.type.medalColor
+            }
+        } else {
+            designNode.fillTexture = nil
+            designNode.fillColor = defaultFillColor
+        }
+    }
+    
+    var defaultFillColor:UIColor {
+        return UIColor.paperColorGray300()
+    }
+    
+    var radius:CGFloat {
+        return MEDAL_DRAW_RADIUS
+    }
+    
+    var medalDesignImageName:String? {
+        return medal?.design.normalImageName
     }
 }

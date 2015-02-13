@@ -18,9 +18,11 @@ class MedalSet {
                     let name = hash["name"]
                     let family =  MedalFamily(rawValue: hash["family"]!)!
                     let type = MedalType(rawValue: hash["type"]!)!
+                    let design = MedalDesign(rawValue: hash["design"]!)!
                     let medal = Medal(name: name!,
                                       family: family,
-                                      type: type
+                                      type: type,
+                                      design: design
                     )
                     medals.append(medal)
                 }

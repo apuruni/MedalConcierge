@@ -30,4 +30,21 @@ enum MedalType: String, Printable {
             }
         }
     }
+    
+    var medalFrameColor: UIColor {
+        get {
+            switch self {
+            case .Normal:
+                return UIColor.paperColorGray900()
+            case .Zero:
+                return UIColor.paperColorGreen900()
+            case .Classic:
+                return UIColor.paperColorRed900()
+            case .Skill:
+                return UIColor.paperColorBlue900()
+            case .Legend:
+                return UIColor.paperColorYellow900()
+            }
+        }
+    }
 }

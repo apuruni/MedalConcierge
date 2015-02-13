@@ -62,11 +62,8 @@ class GameScene: SKScene {
         let medals = game.drawPackage()
         drawCountLabel.text = "\(game.drawCount)"
         println("draw medals: \(medals)")
-        medalNode1.fillColor = medals[0].type.medalColor
-        medalNode1.nameLabel.text = medals[0].name
-        
-        medalNode2.fillColor = medals[1].type.medalColor
-        medalNode2.nameLabel.text = medals[1].name
+        medalNode1.medal = medals[0]
+        medalNode2.medal =  medals[1]
         
         medalCollectionNode.updateCollection()
     }
