@@ -20,6 +20,10 @@ class Game {
 
     }
     
+    func start() {
+        
+    }
+    
     func drawPackage() -> [Medal] {
         let medals =  lottery.drawPackage()
         medalCollection.addMedal(medals[0])
@@ -27,5 +31,9 @@ class Game {
         medalCollection.printColletionStats()
         drawCount++
         return medals
+    }
+    
+    var isCollectionCompleted:Bool {
+        return medalCollection.isCompleted
     }
 }

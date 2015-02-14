@@ -28,7 +28,7 @@ enum MedalDesign: String, Printable {
             case .Normal:
                 return nil
             case .Hologram:
-                return "MedalDesign_Hologram_Mini"
+                return "MedalDesign_Hologram"
             }
         }
     }
