@@ -36,6 +36,7 @@
 		6360B41F1A822498005D25FE /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6360B41E1A822498005D25FE /* assets.atlas */; };
 		6362FEB31A8E105D005389D9 /* MedalDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63874B8E1A8E0D01007BD2A6 /* MedalDesign.swift */; };
 		63874B8F1A8E0D01007BD2A6 /* MedalDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63874B8E1A8E0D01007BD2A6 /* MedalDesign.swift */; };
+		638FE94D1A90158100A0FE4E /* MedalCollection.sks in Resources */ = {isa = PBXBuildFile; fileRef = 638FE94C1A90158100A0FE4E /* MedalCollection.sks */; };
 		639C126E1A8A1435006F6EB8 /* MedalMiniNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C126D1A8A1434006F6EB8 /* MedalMiniNode.swift */; };
 		639C12701A8A217C006F6EB8 /* MedalAssortment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C126F1A8A217C006F6EB8 /* MedalAssortment.swift */; };
 		63D73FA51A80E34600957023 /* LotteryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D73FA41A80E34600957023 /* LotteryTests.swift */; };
@@ -83,6 +84,7 @@
 		6360B41E1A822498005D25FE /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = "<group>"; };
 		637CCE7E1A822DA100F2E221 /* MedalConcierge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedalConcierge-Bridging-Header.h"; sourceTree = "<group>"; };
 		63874B8E1A8E0D01007BD2A6 /* MedalDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalDesign.swift; sourceTree = "<group>"; };
+		638FE94C1A90158100A0FE4E /* MedalCollection.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MedalCollection.sks; sourceTree = "<group>"; };
 		639C126D1A8A1434006F6EB8 /* MedalMiniNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalMiniNode.swift; sourceTree = "<group>"; };
 		639C126F1A8A217C006F6EB8 /* MedalAssortment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalAssortment.swift; sourceTree = "<group>"; };
 		63D73FA41A80E34600957023 /* LotteryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryTests.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				63DEC1591A85C6010099EE38 /* Node */,
 				63DEC1581A85C5DD0099EE38 /* Scene */,
+				63BBF5B01A95F52500BC586A /* Sks */,
 				6356CB231A7F7C2700A0AE6E /* View */,
 				6356CB241A7F7C4200A0AE6E /* Controller */,
 				6356CB221A7F7C1D00A0AE6E /* Model */,
@@ -223,10 +226,18 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
-		63DEC1581A85C5DD0099EE38 /* Scene */ = {
+		63BBF5B01A95F52500BC586A /* Sks */ = {
 			isa = PBXGroup;
 			children = (
 				6356CB001A7F7A4800A0AE6E /* GameScene.sks */,
+				638FE94C1A90158100A0FE4E /* MedalCollection.sks */,
+			);
+			name = Sks;
+			sourceTree = "<group>";
+		};
+		63DEC1581A85C5DD0099EE38 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
 				6356CB021A7F7A4800A0AE6E /* GameScene.swift */,
 			);
 			name = Scene;
@@ -347,6 +358,7 @@
 				63DFD13A1A80D1E100C09424 /* Images.xcassets in Resources */,
 				6360B41F1A822498005D25FE /* assets.atlas in Resources */,
 				6356CB351A7F838000A0AE6E /* Data in Resources */,
+				638FE94D1A90158100A0FE4E /* MedalCollection.sks in Resources */,
 				6356CB011A7F7A4800A0AE6E /* GameScene.sks in Resources */,
 				6356CB081A7F7A4800A0AE6E /* Main.storyboard in Resources */,
 			);

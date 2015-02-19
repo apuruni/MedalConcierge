@@ -11,10 +11,10 @@ class MedalSet {
     func createSet() {
         if let data = Dictionary<String, AnyObject>.loadJSONFromBundle("Data/Collection/Shinuchi"){
             println("collection data:\n \(data)")
-            title = data["title"] as String
+            title = data["title"] as! String
             println("title = \(title)")
             if let items: AnyObject = data["items"] {
-                for(row, hash) in enumerate(items as [Dictionary<String, String>]){
+                for(row, hash) in enumerate(items as! [Dictionary<String, String>]){
                     let name = hash["name"]
                     let family =  MedalFamily(rawValue: hash["family"]!)!
                     let type = MedalType(rawValue: hash["type"]!)!

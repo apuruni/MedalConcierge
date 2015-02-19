@@ -12,21 +12,25 @@ class GameScene: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        if let medalContainer = self.childNodeWithName("medalContainer") as? SKSpriteNode {
-            println("medalContainer:\(medalContainer)")
-            medalContainer.color = UIColor.paperColorCyan600()
-            //medalFrame.runAction(SKAction.colorizeWithColor(UIColor.redColor(), colorBlendFactor: 1, duration: 0.5))
+        let backgroundLayer = self.childNodeWithName("backgroundLayer") as! SKSpriteNode
+        
+        let gameLayer = self.childNodeWithName("gameLayer") as! SKSpriteNode
+        
+        
+        let medalContainer = gameLayer.childNodeWithName("medalContainer") as! SKSpriteNode
+        println("medalContainer:\(medalContainer)")
+        medalContainer.color = UIColor.paperColorCyan600()
 
-            addMedalNode1(medalContainer)
-            addMedalNode2(medalContainer)
-        }
+        addMedalNode1(medalContainer)
+        addMedalNode2(medalContainer)
         
-        if let collectionContainer = self.childNodeWithName("collectionContainer") as? SKSpriteNode {
-            println("collectionContainer:\(collectionContainer)")
-            addMedalCollectionNode(collectionContainer)
-        }
+        let collectionContainer = gameLayer.childNodeWithName("collectionContainer") as! SKSpriteNode
+        println("collectionContainer:\(collectionContainer)")
+        addMedalCollectionNode(collectionContainer)
+
+        drawCountLabel = gameLayer.childNodeWithName("drawCountLabel") as! SKLabelNode
         
-        drawCountLabel = self.childNodeWithName("drawCountLabel") as SKLabelNode
+        self.backgroundColor = backgroundLayer.color
         
     }
     
@@ -51,13 +55,7 @@ class GameScene: SKScene {
         /* Called before each frame is rendered */
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        
-    }
-    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
-        
-    }
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         let medals = game.drawPackage()
         drawCountLabel.text = "\(game.drawCount)"
         println("draw medals: \(medals)")
@@ -67,7 +65,7 @@ class GameScene: SKScene {
         medalCollectionNode.updateCollection()
     }
     
-    override func touchesCancelled(touches: NSSet!, withEvent event: UIEvent!) {
+    override func touchesCancelled(touches: Set<NSObject>, withEvent event: UIEvent!) {
         touchesEnded(touches, withEvent: event)
     }
 }

@@ -40,7 +40,7 @@ class MedalMiniNode: MedalNode {
         self.addChild(coverNode)
 
         countLabel.fontSize = 14
-        countLabel.fontName = "Avenir Next Bold"
+        countLabel.fontName = "Herculanum"
         countLabel.verticalAlignmentMode = SKLabelVerticalAlignmentMode.Center
         countLabel.zPosition = 200
         self.addChild(countLabel)
