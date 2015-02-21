@@ -37,25 +37,30 @@ class GameScene: SKScene {
     
     private func loadBackgroundLayer() {
         addChild(backgroundLayer)
-        let backgroundSprite = SKSpriteNode(color: UIColor.paperColorPurple800(), size: size)
+        let backgroundSprite = SKSpriteNode(color: UIColor.blackColor(), size: size)
         backgroundLayer.addChild(backgroundSprite)
     }
     
     private func loadMainLayer() {
         addChild(mainLayer)
         
-        let collectionContainer = SKSpriteNode(color: UIColor.paperColorPurple300(), size: CGSize(width: size.width, height: 100.0))
+        let collectionContainer = SKSpriteNode(color: UIColor.paperColorPurple700(), size: CGSize(width: size.width, height: 100.0))
         collectionContainer.position = CGPoint(x: 0, y: (size.height - collectionContainer.size.height) / 2)
-        mainLayer.addChild(collectionContainer)
         
         addMedalCollectionNode(collectionContainer)
         
-        let mainContainer = SKSpriteNode(color: UIColor.paperColorPurple800(), size: CGSize(width: size.width, height: size.height - collectionContainer.size.height))
-        mainContainer.position = CGPoint(x: 0, y: -(collectionContainer.size.height) / 2)
-        mainLayer.addChild(mainContainer)
+        let footerContainer = SKSpriteNode(color: UIColor.paperColorPurple700(), size: CGSize(width: size.width, height: 40.0))
+        footerContainer.position = CGPoint(x: 0, y: -(size.height - footerContainer.size.height) / 2)
+        
+        let mainContainer = SKSpriteNode(color: UIColor.paperColorPurple800(), size: CGSize(width: size.width, height: size.height - collectionContainer.size.height - footerContainer.size.height))
+        mainContainer.position = CGPoint(x: 0, y: -(collectionContainer.size.height - footerContainer.size.height) / 2)
         
         addMedalNode1(mainContainer)
         addMedalNode2(mainContainer)
+
+        mainLayer.addChild(mainContainer)
+        mainLayer.addChild(collectionContainer)
+        mainLayer.addChild(footerContainer)
     }
     
     private func loadForegroundLayer() {
@@ -76,17 +81,6 @@ class GameScene: SKScene {
         
         setup()
         
-//        let gameLayer = self.childNodeWithName("gameLayer") as! SKSpriteNode
-//        
-//        
-//        let medalContainer = gameLayer.childNodeWithName("medalContainer") as! SKSpriteNode
-//        println("medalContainer:\(medalContainer)")
-//        medalContainer.color = UIColor.paperColorCyan600()
-//
-//        addMedalNode1(medalContainer)
-//        addMedalNode2(medalContainer)
-//        
-//
 //        drawCountLabel = gameLayer.childNodeWithName("drawCountLabel") as! SKLabelNode
         
     }
@@ -102,8 +96,8 @@ class GameScene: SKScene {
     }
     
     func addMedalCollectionNode(collectionContainer:SKNode) {
-        medalCollectionNode = MedalCollectionNode(rectOfSize: collectionContainer.frame.size)
-        medalCollectionNode.setup(game.medalCollection)
+        medalCollectionNode = MedalCollectionNode()
+        medalCollectionNode.setup(game.medalCollection, frameSize: collectionContainer.frame.size)
         println("medalCollectionNode:\(medalCollectionNode)")
         collectionContainer.addChild(medalCollectionNode)
     }
