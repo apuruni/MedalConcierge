@@ -127,6 +127,8 @@ class GameScene: SKScene {
             let loadedScene = GameScene(size: size)
             loadedScene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
             // loading stuff here
+            MedalNode.LoadMedalDesignAssets()
+            
             dispatch_async(dispatch_get_main_queue()) { completionHandler(loadedScene) }
         }
     }

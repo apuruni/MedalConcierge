@@ -32,17 +32,16 @@
 		6356CB3D1A7F897800A0AE6E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB301A7F827A00A0AE6E /* Extensions.swift */; };
 		6356CB3F1A7F8BA700A0AE6E /* MedalCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB3E1A7F8BA700A0AE6E /* MedalCollectionTests.swift */; };
 		6356CB411A7F9BDD00A0AE6E /* MedalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CB401A7F9BDD00A0AE6E /* MedalTests.swift */; };
-		6360B41F1A822498005D25FE /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6360B41E1A822498005D25FE /* assets.atlas */; };
 		6362FEB31A8E105D005389D9 /* MedalDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63874B8E1A8E0D01007BD2A6 /* MedalDesign.swift */; };
 		63874B8F1A8E0D01007BD2A6 /* MedalDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63874B8E1A8E0D01007BD2A6 /* MedalDesign.swift */; };
 		639C126E1A8A1435006F6EB8 /* MedalMiniNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C126D1A8A1434006F6EB8 /* MedalMiniNode.swift */; };
 		639C12701A8A217C006F6EB8 /* MedalAssortment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C126F1A8A217C006F6EB8 /* MedalAssortment.swift */; };
+		63AE94F51A9980590021B055 /* Medal.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 63AE94F41A9980590021B055 /* Medal.atlas */; };
 		63BBF5B21A95F73A00BC586A /* MainSceneBackgroundLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BBF5B11A95F73A00BC586A /* MainSceneBackgroundLayer.swift */; };
 		63D73FA51A80E34600957023 /* LotteryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D73FA41A80E34600957023 /* LotteryTests.swift */; };
 		63D73FA61A80E3B400957023 /* Lottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DFD13B1A80D3E000C09424 /* Lottery.swift */; };
 		63DEC15B1A85C6350099EE38 /* MedalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DEC15A1A85C6350099EE38 /* MedalNode.swift */; };
 		63DEC15D1A86E75F0099EE38 /* MedalCollectionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DEC15C1A86E75F0099EE38 /* MedalCollectionNode.swift */; };
-		63DFD13A1A80D1E100C09424 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DFD1391A80D1E100C09424 /* Images.xcassets */; };
 		63DFD13C1A80D3E000C09424 /* Lottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DFD13B1A80D3E000C09424 /* Lottery.swift */; };
 		D8C51E28CD5996630798E4D4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A340B85FAE6E15436AF4C17E /* libPods.a */; };
 		F776C875A560B818413527DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A340B85FAE6E15436AF4C17E /* libPods.a */; };
@@ -79,16 +78,15 @@
 		6356CB341A7F838000A0AE6E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		6356CB3E1A7F8BA700A0AE6E /* MedalCollectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalCollectionTests.swift; sourceTree = "<group>"; };
 		6356CB401A7F9BDD00A0AE6E /* MedalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalTests.swift; sourceTree = "<group>"; };
-		6360B41E1A822498005D25FE /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = "<group>"; };
 		637CCE7E1A822DA100F2E221 /* MedalConcierge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedalConcierge-Bridging-Header.h"; sourceTree = "<group>"; };
 		63874B8E1A8E0D01007BD2A6 /* MedalDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalDesign.swift; sourceTree = "<group>"; };
 		639C126D1A8A1434006F6EB8 /* MedalMiniNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalMiniNode.swift; sourceTree = "<group>"; };
 		639C126F1A8A217C006F6EB8 /* MedalAssortment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalAssortment.swift; sourceTree = "<group>"; };
+		63AE94F41A9980590021B055 /* Medal.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Medal.atlas; path = Assets/Atlas/Medal.atlas; sourceTree = "<group>"; };
 		63BBF5B11A95F73A00BC586A /* MainSceneBackgroundLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSceneBackgroundLayer.swift; sourceTree = "<group>"; };
 		63D73FA41A80E34600957023 /* LotteryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryTests.swift; sourceTree = "<group>"; };
 		63DEC15A1A85C6350099EE38 /* MedalNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalNode.swift; sourceTree = "<group>"; };
 		63DEC15C1A86E75F0099EE38 /* MedalCollectionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalCollectionNode.swift; sourceTree = "<group>"; };
-		63DFD1391A80D1E100C09424 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		63DFD13B1A80D3E000C09424 /* Lottery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lottery.swift; sourceTree = "<group>"; };
 		A340B85FAE6E15436AF4C17E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA894D0ABFA71BD53BEEC668 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,9 +142,8 @@
 				6356CB241A7F7C4200A0AE6E /* Controller */,
 				6356CB221A7F7C1D00A0AE6E /* Model */,
 				6356CB2F1A7F825800A0AE6E /* Utils */,
+				63AE94F31A997BF80021B055 /* Assets */,
 				6356CB341A7F838000A0AE6E /* Data */,
-				63DFD1391A80D1E100C09424 /* Images.xcassets */,
-				6360B41E1A822498005D25FE /* assets.atlas */,
 				6356CAFC1A7F7A4800A0AE6E /* Supporting Files */,
 			);
 			path = MedalConcierge;
@@ -221,6 +218,14 @@
 				6356CB301A7F827A00A0AE6E /* Extensions.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		63AE94F31A997BF80021B055 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				63AE94F41A9980590021B055 /* Medal.atlas */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 		63DEC1581A85C5DD0099EE38 /* Scene */ = {
@@ -344,10 +349,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6356CB0D1A7F7A4800A0AE6E /* LaunchScreen.xib in Resources */,
-				63DFD13A1A80D1E100C09424 /* Images.xcassets in Resources */,
-				6360B41F1A822498005D25FE /* assets.atlas in Resources */,
 				6356CB351A7F838000A0AE6E /* Data in Resources */,
 				6356CB081A7F7A4800A0AE6E /* Main.storyboard in Resources */,
+				63AE94F51A9980590021B055 /* Medal.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

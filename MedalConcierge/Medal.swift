@@ -5,7 +5,7 @@ class Medal: Printable {
     let family:MedalFamily
     let type:MedalType
     let design:MedalDesign
-    
+        
     var description: String {
         get {
             return "name: \(name), family: \(family.rawValue), type: \(type.rawValue), design: \(design)"
