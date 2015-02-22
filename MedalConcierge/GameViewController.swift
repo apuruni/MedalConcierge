@@ -9,42 +9,36 @@
 import UIKit
 import SpriteKit
 
-extension SKNode {
-    class func unarchiveFromFile(file : NSString) -> SKNode? {
-        if let path = NSBundle.mainBundle().pathForResource(file, ofType: "sks") {
-            var sceneData = NSData(contentsOfFile: path, options: .DataReadingMappedIfSafe, error: nil)!
-            var archiver = NSKeyedUnarchiver(forReadingWithData: sceneData)
-            
-            archiver.setClass(self.classForKeyedUnarchiver(), forClassName: "SKScene")
-            let scene = archiver.decodeObjectForKey(NSKeyedArchiveRootObjectKey) as GameScene
-            archiver.finishDecoding()
-            return scene
-        } else {
-            return nil
-        }
-    }
-}
-
 class GameViewController: UIViewController {
+    
+    var gameScene:GameScene!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        if gameScene == nil {
+            initGameScene()
+        }
+    }
+    
+    private func initGameScene(){
+        
+        GameScene.loadSceneAssetsWithCompletionHandler(self.view.bounds.size) { loadedScene in
+            self.gameScene = loadedScene
+            
             // Configure the view.
-            let skView = self.view as SKView
+            let skView = self.view as! SKView
+            
+            self.gameScene.scaleMode = .AspectFill
+            
+            skView.showsDrawCount = true
             skView.showsFPS = true
-            skView.showsNodeCount = true
             
-            /* Sprite Kit applies additional optimizations to improve rendering performance */
-            skView.ignoresSiblingOrder = true
-            
-            /* Set the scale mode to scale to fit the window */
-            scene.scaleMode = .AspectFit
-            
-            scene.position = CGPoint(x:0, y:0)
-            
-            skView.presentScene(scene)
+            skView.presentScene(self.gameScene)
         }
     }
 

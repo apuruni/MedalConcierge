@@ -17,6 +17,8 @@ class MedalNode: SKShapeNode {
     var nameLableBackgroud:SKShapeNode!
     var designNode:SKShapeNode!
     
+    static var designTextures = Dictionary<MedalDesign, SKTexture>()
+    
     override init() {
         super.init()
         setup()
@@ -60,8 +62,8 @@ class MedalNode: SKShapeNode {
             nameLableBackgroud.fillColor = medal.type.medalFrameColor
             nameLabel.text = medal.name
             
-            if let imageName = medalDesignImageName {
-                designNode.fillTexture = SKTexture(imageNamed: imageName)
+            if let texture =  MedalNode.designTextures[medal.design] {
+                designNode.fillTexture = texture
                 designNode.fillColor = UIColor.whiteColor()
             } else {
                 designNode.fillTexture = nil
@@ -83,5 +85,10 @@ class MedalNode: SKShapeNode {
     
     var medalDesignImageName:String? {
         return medal?.design.normalImageName
+    }
+    
+    static func LoadMedalDesignAssets() {
+        let atlas = SKTextureAtlas(named: "Medal")
+        designTextures[MedalDesign.Hologram] = atlas.textureNamed(MedalDesign.Hologram.normalImageName!)
     }
 }

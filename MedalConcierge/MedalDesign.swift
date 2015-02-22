@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-enum MedalDesign: String, Printable {
+enum MedalDesign: String, Printable, Hashable {
     case Normal = "Normal" // ノーマルメダル
     case Hologram = "Hologram" // ホログラム
     
@@ -32,5 +32,12 @@ enum MedalDesign: String, Printable {
             }
         }
     }
+    
+    var hashValue: Int {
+        return rawValue.hashValue
+    }
+}
 
+func == (lhs: MedalDesign, rhs: MedalDesign) -> Bool {
+    return lhs.rawValue == rhs.rawValue
 }
