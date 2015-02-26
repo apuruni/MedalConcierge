@@ -3,8 +3,9 @@ import SpriteKit
 let MEDAL_IN_COLLECTION_RADIUS:CGFloat = 12.0
 
 class MedalMiniNode: MedalNode {
-    var countLabel = SKLabelNode()
     var coverNode:SKShapeNode!
+    let countLabel = SKLabelNode()
+
     
     var collected:Bool = false {
         didSet {
@@ -39,11 +40,11 @@ class MedalMiniNode: MedalNode {
         coverNode.zPosition  = 900
         self.addChild(coverNode)
 
-        countLabel.fontSize = 14
-        countLabel.fontName = "Herculanum"
-        countLabel.verticalAlignmentMode = SKLabelVerticalAlignmentMode.Center
-        countLabel.zPosition = 200
-        self.addChild(countLabel)
+        numberInSetLabel.fontSize = 10
+        numberInSetLabel.fontName = "Herculanum"
+        numberInSetLabel.verticalAlignmentMode = SKLabelVerticalAlignmentMode.Center
+        numberInSetLabel.zPosition = 200
+        self.addChild(numberInSetLabel)
     }
     
     override var radius:CGFloat {

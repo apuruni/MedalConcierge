@@ -22,7 +22,8 @@ class MedalSet {
                     let medal = Medal(name: name!,
                                       family: family,
                                       type: type,
-                                      design: design
+                                      design: design,
+                                      numberInSet: row + 1
                     )
                     medals.append(medal)
                 }

@@ -16,6 +16,7 @@ class MedalNode: SKShapeNode {
     let nameLabel = SKLabelNode(text: "EMPTY")
     var nameLableBackgroud:SKShapeNode!
     var designNode:SKShapeNode!
+    let numberInSetLabel = SKLabelNode()
     
     static var designTextures = Dictionary<MedalDesign, SKTexture>()
     
@@ -61,6 +62,7 @@ class MedalNode: SKShapeNode {
             fillColor = medal.type.medalFrameColor
             nameLableBackgroud.fillColor = medal.type.medalFrameColor
             nameLabel.text = medal.name
+            numberInSetLabel.text = "\(medal.numberInSet)"
             
             if let texture =  MedalNode.designTextures[medal.design] {
                 designNode.fillTexture = texture
